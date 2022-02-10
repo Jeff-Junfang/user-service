@@ -3,11 +3,15 @@ package com.eric.userservice;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
-@SpringBootApplication
-@EnableEurekaClient
+/**
+ * @author wangqiang167
+ */
 @Slf4j
+// @EnableEurekaClient
+@SpringBootApplication
+@EnableMongoRepositories
 public class UserServiceApplication {
 
     public static void main(String[] args) {
